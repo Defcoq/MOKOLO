@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title></title>
+
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="lib/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css" />
+	<link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+	<link href="css/main.css" rel="stylesheet">
+
+	<!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+	<link href="styles/ionic.app.css" rel="stylesheet">
+	-->
+
+	<!-- ionic/angularjs js -->
+	<!-- build:js js/vendor.js -->
+	<!-- bower:js -->
+	  <script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="lib/angular-websocket/dist/angular-websocket.min.js"></script>
+	<script src="lib/ngCordova/dist/ng-cordova.js"></script>
+	<script src="lib/lodash/lodash.js"></script>
+	<script src="lib/angular-base64/angular-base64.js"></script>
+	<script src="lib/ionic-service-core/ionic-core.js"></script>
+	<script src="lib/ionic-service-push/ionic-push.js"></script>
+	<script src="lib/moment/moment.js"></script>
+	<script src="lib/angular-moment/angular-moment.js"></script>
+	<script src="lib/firebase/firebase.js"></script>
+	<script src="lib/angularfire/dist/angularfire.js"></script>
+	<script src="lib/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.js"></script>
+	<script src="lib/ng-cordova-oauth/dist/ng-cordova-oauth.js"></script>
+	<script src="lib/aws-sdk/dist/aws-sdk.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- cordova script (this will be a 404 during development) -->
+	<script src="cordova.js"></script>
+
+	<!-- your app's js -->
+	<!-- build:js js/js.js -->
+	<script src="js/auth/auth.module.js"></script>
+	<script src="js/businesses/businesses.module.js"></script>
+	<script src="js/products/products.module.js"></script>
+	<script src="js/categories/categories.module.js"></script>
+	<script src="js/common/common.module.js"></script>
+	<script src="js/generic/generic.module.js"></script>
+	<script src="js/home/home.module.js"></script>
+	<script src="js/infrastructure/infrastructure.module.js"></script>
+	<script src="js/menu/menu.module.js"></script>
+	<script src="js/tags/tags.module.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/auth/auth.service.js"></script>
+	<script src="js/auth/login.controller.js"></script>
+	<script src="js/businesses/business.controller.js"></script>
+	<script src="js/businesses/businesses.controller.js"></script>
+	<script src="js/businesses/businesses.service.js"></script>
+	<script src="js/businesses/edit-business.service.js"></script>
+	<script src="js/businesses/edit-description.controller.js"></script>
+	<script src="js/businesses/edit-open-hours.service.js"></script>
+	<script src="js/businesses/open-hours.controller.js"></script>
+	
+	<script src="js/products/product.controller.js"></script>
+	<script src="js/products/products.controller.js"></script>
+	<script src="js/products/products.service.js"></script>
+	<script src="js/products/edit-product.service.js"></script>
+	<script src="js/products/edit-productdescription.controller.js"></script>
+	
+	<script src="js/categories/categories.controller.js"></script>
+	<script src="js/categories/categories.service.js"></script>
+	<script src="js/categories/edit-category-dialog.service.js"></script>
+	<script src="js/common/directives/file-change.directive.js"></script>
+	<script src="js/common/services/amazon-s3.service.js"></script>
+	<script src="js/common/services/camera.service.js"></script>
+	<script src="js/common/services/extenal-apps.service.js"></script>
+	<script src="js/common/services/field-editor/field-editor.service.js"></script>
+	<script src="js/common/services/html-to-plain-text.service.js"></script>
+	<script src="js/config/internet-connectivity.js"></script>
+	<script src="js/config/spinner.js"></script>
+	<script src="js/configuration.js"></script>
+	<script src="js/generic/generic.controller.js"></script>
+	<script src="js/generic/generic.service.js"></script>
+	<script src="js/generic/map-options.controller.js"></script>
+	<script src="js/home/home.controller.js"></script>
+	<script src="js/infrastructure/services/fire-data.service.js"></script>
+	<script src="js/infrastructure/services/firebase-db.service.js"></script>
+	<script src="js/infrastructure/services/lists.service.js"></script>
+	<script src="js/menu/menu.controller.js"></script>
+	<script src="js/tags/edit-tag-dialog.service.js"></script>
+	<script src="js/tags/tags.controller.js"></script>
+	<script src="js/tags/tags.service.js"></script>
+	<!-- endbuild -->
+  </head>
+
+  <body ng-app="itinnovdesign-frb-admin" >
+	<ion-nav-view></ion-nav-view>
+  </body>
+</html>

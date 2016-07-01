@@ -1,0 +1,11 @@
+<ion-view view-title="Modifier la description">
+	<ion-content class="padding">
+		<div class="list">
+			<label class="item item-input">
+				<textarea rows="16" ng-model="vm.description"></textarea>
+			</label>
+			<button class="button button-full button-positive" ng-disabled="!vm.description" ng-click="vm.save()">Sauvegardez</button>
+			<button class="button button-full" ng-click="vm.cancel()">Elimina</button>
+		</div>
+	</ion-content>
+</ion-view>

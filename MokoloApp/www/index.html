@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/components-font-awesome/css/font-awesome.css">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+     <script src="lib/Conversion.js/conversion.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+	
+	    <script src="lib/angular-websocket/dist/angular-websocket.min.js"></script>
+		<script src="lib/ngCordova/dist/ng-cordova.js"></script>
+		<script src="lib/lodash/lodash.js"></script>
+		<script src="lib/angular-base64/angular-base64.js"></script>
+		<script src="lib/ionic-service-core/ionic-core.js"></script>
+		<script src="lib/ionic-service-push/ionic-push.js"></script>
+		<script src="lib/date.format/date.format.js"></script>
+		<script src="lib/Geolib/dist/geolib.js"></script>
+		<script src="lib/ng-cordova-oauth/dist/ng-cordova-oauth.js"></script>
+		<script src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
+		<script src="lib/ionic-toast/dist/ionic-toast.bundle.min.js"></script>
+		<script src="lib/firebase/firebase.js"></script>
+		<script src="lib/angularfire/dist/angularfire.js"></script>
+		<script src="lib/ionic-rating/ionic-rating.js"></script>
+	<script src="lib/moment/moment.js"></script>
+	<script src="lib/angular-moment/angular-moment.js"></script>
+	<script src="lib/angular-i18n/angular-locale_fr-fr.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="itinnovdesign">
+
+  <ion-nav-view></ion-nav-view>
+  
+  		<script src="js/businesses.module.js"></script>
+		<script src="js/businesses/businesses.module.js"></script>
+		<script src="js/catalogs/catalogs.module.js"></script>
+		<script src="js/common/common.module.js"></script>
+		<script src="js/contact-us/contact-us.module.js"></script>
+		<script src="js/drupal/drupal.module.js"></script>
+		<script src="js/favorites/favorite-businesses.module.js"></script>
+		<script src="js/map/map.module.js"></script>
+		<script src="js/menu/menu.module.js"></script>
+		<script src="js/news/news.module.js"></script>
+		<script src="js/products/products.module.js"></script>
+		<script src="js/push/push.module.js"></script>
+		<script src="js/reviews/reviews.module.js"></script>
+		<script src="js/services/services.module.js"></script>
+		<script src="js/wordpress/wordpress.module.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/businesses/business.controller.js"></script>
+		<script src="js/businesses/businesses.controller.js"></script>
+		<script src="js/businesses/businesses.service.js"></script>
+		<script src="js/catalogs/catalog.controller.js"></script>
+		<script src="js/catalogs/catalogs.controller.js"></script>
+		<script src="js/catalogs/catalogs.service.js"></script>
+		<script src="js/common/directives/gmaps/gmaps.directive.js"></script>
+		<script src="js/common/services/data/data.service.js"></script>
+		<script src="js/common/services/data/extended-firebase-data.service.js"></script>
+		<script src="js/common/services/data/firebase-data.service.js"></script>
+		<script src="js/common/services/data/local-data.service.js"></script>
+		<script src="js/common/services/data/remote-data.service.js"></script>
+		<script src="js/common/services/distance.service.js"></script>
+		<script src="js/common/services/extenal-apps.service.js"></script>
+		<script src="js/common/services/html-to-plain-text.service.js"></script>
+		<script src="js/common/services/open-hours.service.js"></script> 
+		<script src="js/configuration.js"></script>
+		<script src="js/contact-us/contact-us.controller.js"></script>
+		<script src="js/drupal/drupal-article.controller.js"></script>
+		<script src="js/drupal/drupal-articles.controller.js"></script>
+		<script src="js/drupal/drupal.service.js"></script>
+		<script src="js/favorites/favorite-businesses.controller.js"></script>
+		<script src="js/favorites/favorite-businesses.service.js"></script>
+		<script src="js/internet-connectivity.js"></script>
+		<script src="js/map/map.controller.js"></script>
+		<script src="js/map/map.service.js"></script>
+		<script src="js/menu/menu.controller.js"></script>
+		<script src="js/news/article.controller.js"></script>
+		<script src="js/news/articles.controller.js"></script>
+		<script src="js/news/news.service.js"></script>
+		<script src="js/products/product.controller.js"></script>
+		<script src="js/products/products.controller.js"></script>
+		<script src="js/products/products.service.js"></script>
+		<script src="js/push/push-sender.service.js"></script>
+		<script src="js/push/push-token.service.js"></script>
+		<script src="js/push/push.controller.js"></script>
+		<script src="js/reviews/reviews.controller.js"></script>
+		<script src="js/reviews/reviews.service.js"></script>
+		<script src="js/services/service.controller.js"></script>
+		<script src="js/services/services.controller.js"></script>
+		<script src="js/services/services.service.js"></script>
+		<script src="js/spinner.js"></script>
+		<script src="js/wordpress/wordpress-article.controller.js"></script>
+		<script src="js/wordpress/wordpress-articles.controller.js"></script>
+		<script src="js/wordpress/wordpress.service.js"></script>
+		
+		<script src="js/delivery/shop-delivery.module.js"></script>
+		<script src="js/cart/shop-cart.module.js"></script>
+		<script src="js/cart/shop-cart.service.js"></script>
+		<script src="js/cart/shop-cart/shop-cart.controller.js"></script>
+		
+		<script src="js/delivery/delivery-data.service.js"></script>
+		<script src="js/delivery/delivery-selector/delivery-method-selector.controller.js"></script>
+		<script src="js/delivery/home-delivery/home-delivery.controller.js"></script>
+		<script src="js/delivery/shop-info.service.js"></script>
+		<script src="js/delivery/shop-order-processor.js"></script>
+		<script src="js/delivery/take-away/take-away.controller.js"></script>
+  </body>
+</html>

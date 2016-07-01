@@ -1,0 +1,28 @@
+<ion-view view-title="Login">
+	<ion-content class="padding">
+
+		<div class="card">
+			<div class="list padding">
+				<label class="item item-input">
+					<span class="input-label">Email</span>
+					<input type="text" ng-model="vm.user.email">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Password</span>
+					<input type="password" ng-model="vm.user.password">
+				</label>
+				<p class="padding"><small>Come demo utilisez <code>mokolo@mokolo.com</code> avec password <code>mokolo</code> or ou bien creez vous meme un utilisateur.</small></p>
+				<button ng-click="vm.signIn()"
+						class="button button-block button-positive activated">
+					Entrez
+				</button>
+			</div>
+			<div class="padding" style="text-align:center">
+				<button ng-click="vm.signupModal.show()"
+						class="button button-small button-outline icon-left ion-person-add button-positive">
+					Cree un nouveau Utilisateur
+				</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
