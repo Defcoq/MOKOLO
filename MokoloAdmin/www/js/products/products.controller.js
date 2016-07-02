@@ -5,10 +5,10 @@
 		.module('itinnovdesign-frb-admin.products')
 		.controller('productsController', productsController);
 
-	productsController.$inject = ['productsService', '$ionicListDelegate', 'editBusinessService', '$state'];
+	productsController.$inject = ['productsService', '$ionicListDelegate', 'editProductService', '$state'];
 
 	/* @ngInject */
-	function productsController(productsService, $ionicListDelegate, editBusinessService, $state) {
+	function productsController(productsService, $ionicListDelegate, editProductService, $state) {
 		var vm = angular.extend(this, {
 			items: [],
 			addItem: addItem,
@@ -37,7 +37,7 @@
 		function updateItem(item) {
 			$ionicListDelegate.closeOptionButtons();
 
-			editBusinessService.show(item.name, item.description).then(function(result) {
+			editProductService.show(item.name, item.description).then(function(result) {
 				if (result.canceled) {
 					return;
 				}
@@ -56,7 +56,7 @@
 		}
 
 		function addItem() {
-			editBusinessService.show().then(function(result) {
+			editProductService.show().then(function(result) {
 				if (result.canceled) {
 					return;
 				}

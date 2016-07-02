@@ -13,7 +13,8 @@
 		var bucket = initBucket();
 		var service = {
 			upload: upload,
-			deleteImage: deleteImage
+			deleteImage: deleteImage,
+			uploadPDF : uploadPDF
 		};
 		return service;
 
@@ -81,6 +82,32 @@
 				ContentType: 'image/jpeg',
 				Body: dataURItoBlob(imageURI),
 				ACL: "public-read",
+			};
+
+			var deferred = $q.defer();
+			bucket
+				.putObject(params, function(err) {
+					if (err) {
+						deferred.reject(err);
+					}
+					else {
+						deferred.resolve(getFullUrl(filename));
+					}
+				})
+				.on('httpUploadProgress', function(progress) {
+					console.log(Math.round(progress.loaded / progress.total * 100) + '% done');
+				});
+			return deferred.promise;
+		}
+		
+				function uploadPDF(pdfFile) {
+			var filename = guid() + '.pdf';
+			var params = {
+				Key: filename,
+				ContentType: pdfFile.type,
+				Body: pdfFile,
+				ACL: "public-read",
+				ServerSideEncryption: 'AES256',
 			};
 
 			var deferred = $q.defer();

@@ -9,7 +9,7 @@
 
 	/* @ngInject */
 	function openHoursService(_) {
-		var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		var dayNames = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 
 		var service = {
 			isBusinessOpen: isBusinessOpen,
@@ -44,6 +44,10 @@
 		}
 
 		function isBusinessOpen(openHours) {
+			if(!openHours)
+				return false;
+			if(!openHours.days)
+				return false;
 			console.log("business open hours =>");
 			console.log(openHours);
 			var now = (new Date());

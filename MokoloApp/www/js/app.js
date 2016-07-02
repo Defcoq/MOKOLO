@@ -26,7 +26,8 @@ angular.module('itinnovdesign', [
 	'itinnovdesign.contact-us',
 	'itinnovdesign.wordpress',
 	'itinnovdesign.drupal',
-	'itinnovdesign.reviews'
+	'itinnovdesign.reviews',
+	'ionic-cache-src'
 ])
 .value('_', window._)
 .run(function($ionicPlatform) {

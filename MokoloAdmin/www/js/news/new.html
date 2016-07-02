@@ -1,0 +1,76 @@
+<ion-view cache-view="false">
+	<ion-nav-title>
+		{{ vm.item.title }}
+	</ion-nav-title>
+	<ion-content>
+
+		<ul class="list">
+
+			<li class="item item-icon-right" ng-click="vm.changeString('title')">
+				<label>Nom:</label>
+				<p class="padding">{{vm.item.title}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</li>
+
+			<li class="item item-icon-right" ng-click="vm.changeDescription()">
+				<label>Description:</label>
+				<p class="padding">{{vm.item.body}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</li>
+
+			<li class="item item-icon-right" ng-click="vm.chooseBusiness()">
+				<label>Boutiques:</label>
+				<p class="padding">{{vm.item.business.name}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</li>
+			
+			<li class="item item-icon-right" ng-click="vm.changeString('url')">
+				<label>Url:</label>
+				<p class="padding">{{vm.item.url}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</li>
+			
+			
+			
+			<div class="item item-divider item-icon-right">
+				thumb (image associée)
+				<i class="icon ion-plus" ng-if="!vm.isWebView" ng-click="vm.uploadImage(true,'thumb')"></i>
+				<label class="custom-file-upload" ng-if="vm.isWebView">
+					<input type="file" id="file" file-change="vm.uploadImageWebView($event, files, true,'thumb')"/>
+					<i class="icon ion-plus"></i>
+				</label>
+			</div>
+			<li class="item">
+				<div class="card"
+					ng-if="!!vm.item.thumb"
+					style="margin: 5px;"
+					on-hold="vm.removeImage(vm.item.thumb, true,'thumb')">
+					<div class="item item-image">
+						<img ng-src="{{vm.item.thumb}}">
+					</div>
+				</div> <!--/ row -->
+			</li>
+			
+			<div class="item item-divider item-icon-right">
+				Photo
+				<i class="icon ion-plus" ng-if="!vm.isWebView" ng-click="vm.uploadImage(true,'picture')"></i>
+				<label class="custom-file-upload" ng-if="vm.isWebView">
+					<input type="file" id="file" file-change="vm.uploadImageWebView($event, files, true,'picture')"/>
+					<i class="icon ion-plus"></i>
+				</label>
+			</div>
+			<li class="item">
+				<div class="card"
+					ng-if="!!vm.item.picture"
+					style="margin: 5px;"
+					on-hold="vm.removeImage(vm.item.picture, true,'picture')">
+					<div class="item item-image">
+						<img ng-src="{{vm.item.picture}}">
+					</div>
+				</div> <!--/ row -->
+			</li>
+			
+			
+		</ul>
+	</ion-content>
+</ion-view>

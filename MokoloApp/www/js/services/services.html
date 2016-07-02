@@ -16,7 +16,7 @@
 				</div>
 			</div>
 
-			<div class="card col" ng-click="vm.showServiceDetails(vm.services[$index + 1].guid)">
+			<div class="card col" ng-if="($index + 1) < vm.services.length" ng-click="vm.showServiceDetails(vm.services[$index + 1].guid)">
 				<div class="item">
 					<h2>{{vm.services[$index + 1].title}}</h2>
 				</div>

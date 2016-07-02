@@ -12,7 +12,7 @@
 				</div>
 			</div>
 
-			<div class="card col" ng-click="vm.openCatalog(vm.catalogs[$index + 1].guid)">
+			<div class="card col" ng-if="($index + 1) < vm.catalogs.length" ng-click="vm.openCatalog(vm.catalogs[$index + 1].guid)">
 				<div class="item item-image">
 					<img ng-src="{{vm.catalogs[$index + 1].thumb}}">
 				</div>

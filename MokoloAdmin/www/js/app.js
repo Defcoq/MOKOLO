@@ -10,10 +10,14 @@ angular.module('itinnovdesign-frb-admin', [
 	'itinnovdesign-frb-admin.home',
 	'itinnovdesign-frb-admin.businesses',
 	'itinnovdesign-frb-admin.products',
+	'itinnovdesign-frb-admin.services',
+	'itinnovdesign-frb-admin.news',
+	'itinnovdesign-frb-admin.catalogs',
 	'itinnovdesign-frb-admin.menu',
 	'itinnovdesign-frb-admin.categories',
 	'itinnovdesign-frb-admin.tags',
-	'itinnovdesign-frb-admin.generic'
+	'itinnovdesign-frb-admin.generic',
+	'pdf'
 ])
 .value('_', window._)
 
